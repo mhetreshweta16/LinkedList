@@ -49,6 +49,13 @@ namespace LinkedList
 
 
         }
+
+        public void Append(int new_data)
+        {
+
+            InsertLast(new_data);
+            Console.WriteLine("inserted into list" + new_data);
+        }
         public void display()
         {
             Node temp = this.head;
