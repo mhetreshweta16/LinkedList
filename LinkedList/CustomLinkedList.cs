@@ -36,6 +36,19 @@ namespace LinkedList
             return temp;
         }
 
+        public void InsertFirst(int new_data)
+        {
+
+            Node new_node = new Node(new_data);
+
+            new_node.next = this.head;
+            this.head = new_node;
+            Console.WriteLine("inserted into list" + new_node.data);
+                     
+            
+
+
+        }
         public void display()
         {
             Node temp = this.head;
