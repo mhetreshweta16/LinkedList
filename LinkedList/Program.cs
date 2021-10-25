@@ -9,10 +9,18 @@ namespace LinkedList
             Console.WriteLine("Hello World!");
             CustomLinkedList list = new CustomLinkedList();
             list.InsertLast(50);
+            list.InsertLast(30);
+            list.InsertLast(70);
+            Console.WriteLine("after deleting first node the list is:");
+            list.deleteFirstNode();
+            list.display();
+
+            //insert node at specific position
+            /*list.InsertLast(50);
             list.InsertLast(70);
             Console.WriteLine("after insert node at specific position");
             list.specificPostition(2, 30);
-            list.display();
+            list.display();*/
 
             //Append the node
             /*list.Append(50);

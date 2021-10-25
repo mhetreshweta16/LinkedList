@@ -115,6 +115,34 @@ namespace LinkedList
 
 
         }
+
+        /// <summary>
+        /// Deletes the first node.
+        /// </summary>
+        public void deleteFirstNode()
+        {
+            Node newNode = this.head;
+            if (this.head == null)
+            {
+                Console.WriteLine("Linked List is Empty");
+
+            }
+            if (this.head.next == null)
+            {
+                this.head = null;
+
+            }
+            else
+            {
+
+                this.head = head.next;
+                
+                
+            }
+        }
+        /// <summary>
+        /// Display the all node in the list
+        /// </summary>
         public void display()
         {
             Node temp = this.head;
