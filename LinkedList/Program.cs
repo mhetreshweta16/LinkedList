@@ -12,9 +12,12 @@ namespace LinkedList
             list.InsertLast(50);
             list.InsertLast(30);
             list.InsertLast(70);
-            Console.WriteLine("after deleting last node the list is:");
-            list.deleteLastNode();
+            Console.WriteLine("the list is:");
             list.display();
+            list.Search(50);
+            //delete last node
+            /*list.deleteLastNode();
+            list.display();*/
 
             //deleting first node
             /* list.deleteFirstNode();
