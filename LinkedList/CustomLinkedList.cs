@@ -194,6 +194,12 @@ namespace LinkedList
         
         }
 
+        /// <summary>
+        /// Inserts the node afetr specific node.
+        /// 
+        /// </summary>
+        /// <param name="data">The previous node data.</param>
+        /// <param name="newData">The new data.</param>
         public void insertAfterNode(int data,int newData)
         {
             Node temp = this.head;
@@ -210,6 +216,25 @@ namespace LinkedList
                 }
                 temp = temp.next;
             }
+        }
+
+        /// <summary>
+        /// Deletes the specific node.
+        /// </summary>
+        /// <param name="specificData">The specific data.</param>
+/        public void deleteSpecificNode(int specificData)
+        {
+            Node temp = this.head;
+            while (temp != null)
+            {
+                if (temp.next.data == specificData)
+                {
+                    temp.next = temp.next.next;
+                    break;
+                }
+                temp = temp.next;
+            }
+        
         }
         /// <summary>
         /// Display the all node in the list

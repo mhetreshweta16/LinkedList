@@ -17,6 +17,10 @@ namespace LinkedList
             Console.WriteLine("afete adding the new node list is");
             list.insertAfterNode(30, 40);
             list.display();
+            Console.WriteLine("afete deleting specific node list is:");
+            list.deleteSpecificNode(40);
+            list.display();
+
 
             // list.Search(50);
             //delete last node
