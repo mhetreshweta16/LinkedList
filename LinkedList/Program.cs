@@ -8,12 +8,17 @@ namespace LinkedList
         {
             Console.WriteLine("Hello World!");
             CustomLinkedList list = new CustomLinkedList();
+
             list.InsertLast(50);
             list.InsertLast(30);
             list.InsertLast(70);
-            Console.WriteLine("after deleting first node the list is:");
-            list.deleteFirstNode();
+            Console.WriteLine("after deleting last node the list is:");
+            list.deleteLastNode();
             list.display();
+
+            //deleting first node
+            /* list.deleteFirstNode();
+             */
 
             //insert node at specific position
             /*list.InsertLast(50);

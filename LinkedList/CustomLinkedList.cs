@@ -140,6 +140,35 @@ namespace LinkedList
                 
             }
         }
+
+        /// <summary>
+        /// Deletes the last node.
+        /// </summary>
+        /// <returns></returns>
+        public int deleteLastNode()
+        {
+            Node newNode = this.head;
+            if (this.head == null)
+            {
+                Console.WriteLine("Linked List is Empty");
+            }
+            if (this.head.next == null)
+            {
+                this.head = null;
+                return 0;
+
+            }
+            while (newNode.next.next != null)
+            {
+                newNode = newNode.next;
+
+            }
+            int lastnode = newNode.next.data;
+            newNode.next = null;
+            return lastnode;
+
+        }
+
         /// <summary>
         /// Display the all node in the list
         /// </summary>
