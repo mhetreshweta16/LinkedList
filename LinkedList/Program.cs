@@ -4,23 +4,31 @@ namespace LinkedList
 {
     class Program
     {
+        /// <summary>
+        /// Linked List 
+        /// </summary>
+        /// <param name="args"></param>
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
             CustomLinkedList list = new CustomLinkedList();
 
             list.InsertLast(50);
-            list.InsertLast(30);          
+            list.InsertLast(30);
+            list.InsertLast(40);
             list.InsertLast(70);
-           
-            Console.WriteLine("afete adding the new node list is");
-            list.insertAfterNode(30, 40);
+            Console.WriteLine("the sorted list is:");
             list.display();
             list.size();
-            Console.WriteLine("afete deleting specific node list is:");
-            list.deleteSpecificNode(40);
-            list.display();
-            list.size();
+
+            /* Console.WriteLine("afete adding the new node list is");
+             list.insertAfterNode(30, 40);
+             list.display();
+             list.size();
+             Console.WriteLine("afete deleting specific node list is:");
+             list.deleteSpecificNode(40);
+             list.display();
+             list.size();*/
 
 
             // list.Search(50);
