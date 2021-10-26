@@ -11,6 +11,8 @@ namespace LinkedList
         public Node head;
         /// <summary>
         /// Inserts the node to the last.
+        /// and when element is adding it checks the element is smaller or not
+        /// the sorted list
         /// </summary>
         /// <param name="new_data">The new data.</param>
        public void InsertLast(int new_data)
