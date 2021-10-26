@@ -11,16 +11,15 @@ namespace LinkedList
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            CustomLinkedList list = new CustomLinkedList();
+            LinkedListStack  listStack = new LinkedListStack();
 
-            list.InsertLast(50);
-            list.InsertLast(30);
-            list.InsertLast(40);
-            list.InsertLast(70);
-            Console.WriteLine("the sorted list is:");
-            list.display();
-            list.size();
-
+            listStack.push(50);
+            listStack.push(30);
+            listStack.push(70);
+            Console.WriteLine("the stack list is:");
+            listStack.display();
+            
+            //Linked list
             /* Console.WriteLine("afete adding the new node list is");
              list.insertAfterNode(30, 40);
              list.display();
