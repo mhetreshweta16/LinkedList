@@ -58,9 +58,7 @@ namespace LinkedList
             this.head = new_node;
             Console.WriteLine("inserted into list" + new_node.data);
                      
-            
-
-
+           
         }
         /// <summary>
         /// Appends the specified new data.
@@ -169,7 +167,11 @@ namespace LinkedList
 
         }
 
-
+        /// <summary>
+        /// Searches the specified value.
+        /// </summary>
+        /// <param name="value">The value.</param>
+        /// <returns></returns>
         public int Search(int value)
         {
             Node temp = this.head;
@@ -190,6 +192,24 @@ namespace LinkedList
             }
             return value;
         
+        }
+
+        public void insertAfterNode(int data,int newData)
+        {
+            Node temp = this.head;
+            Node newNode = new Node(newData);
+
+            while (temp != null)
+            {
+                if (temp.data == data)
+                {
+                    Node temp1 = temp.next;
+                    temp.next = newNode;
+                    newNode.next = temp1;
+                    break;
+                }
+                temp = temp.next;
+            }
         }
         /// <summary>
         /// Display the all node in the list
