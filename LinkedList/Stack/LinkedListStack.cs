@@ -26,6 +26,42 @@ namespace LinkedList
             this.top = newNode;
             Console.WriteLine("the value inserted," + newNode.data);
         }
+
+        public void Peek()
+        {
+            if (this.top == null)
+            {
+                Console.WriteLine("no elements present to peek");
+            
+            }
+            Console.WriteLine("top most element" + this.top.data);
+        }
+
+        public void Pop()
+        {
+            if (this.top == null)
+            {
+                Console.WriteLine("no elements present to pop");
+                return;
+            }
+            int deleteNode = this.top.data;
+            Peek();
+            this.top = this.top.next;
+            Console.WriteLine("deleted element is{0}", deleteNode);
+
+        }
+        public bool IsEmpty()
+        {
+            while (this.top != null)
+            {
+                Pop();
+             }
+            if (this.top == null)
+                 return true;
+
+            else
+                return false;
+        }
         /// <summary>
         /// Displays this stack values.
         /// </summary>
@@ -38,7 +74,7 @@ namespace LinkedList
             }
             while (temp != null)
             {
-                Console.WriteLine("value is inserted " + temp.data);
+                Console.WriteLine("" + temp.data+"");
                 temp = temp.next;
             }
         }

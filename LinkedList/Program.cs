@@ -18,7 +18,15 @@ namespace LinkedList
             listStack.push(70);
             Console.WriteLine("the stack list is:");
             listStack.display();
-            
+            listStack.Peek();
+            listStack.Pop();
+            Console.WriteLine("after the pop list is");
+            listStack.display();
+            listStack.IsEmpty();
+
+
+
+
             //Linked list
             /* Console.WriteLine("afete adding the new node list is");
              list.insertAfterNode(30, 40);
