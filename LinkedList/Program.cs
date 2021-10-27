@@ -18,6 +18,10 @@ namespace LinkedList
             listQueue.Enqueue(70);
             Console.WriteLine("the Queue list is:");
             listQueue.Display();
+            listQueue.Dequeue();
+            Console.WriteLine("the Deueue list is:");
+            listQueue.Display();
+            
 
             //stack operations
             /*LinkedListStack  listStack = new LinkedListStack();
