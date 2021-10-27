@@ -11,8 +11,16 @@ namespace LinkedList
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            LinkedListStack  listStack = new LinkedListStack();
 
+            LinkedListQueue listQueue = new LinkedListQueue();
+            listQueue.Enqueue(50);
+            listQueue.Enqueue(30);
+            listQueue.Enqueue(70);
+            Console.WriteLine("the Queue list is:");
+            listQueue.Display();
+
+            //stack operations
+            /*LinkedListStack  listStack = new LinkedListStack();
             listStack.push(50);
             listStack.push(30);
             listStack.push(70);
@@ -22,11 +30,7 @@ namespace LinkedList
             listStack.Pop();
             Console.WriteLine("after the pop list is");
             listStack.display();
-            listStack.IsEmpty();
-
-
-
-
+            listStack.IsEmpty();*/
             //Linked list
             /* Console.WriteLine("afete adding the new node list is");
              list.insertAfterNode(30, 40);

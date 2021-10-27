@@ -26,7 +26,9 @@ namespace LinkedList
             this.top = newNode;
             Console.WriteLine("the value inserted," + newNode.data);
         }
-
+        /// <summary>
+        /// Peeks the top most element from stack.
+        /// </summary>
         public void Peek()
         {
             if (this.top == null)
@@ -37,6 +39,9 @@ namespace LinkedList
             Console.WriteLine("top most element" + this.top.data);
         }
 
+        /// <summary>
+        /// Pops the top elemnts from stack.
+        /// </summary>
         public void Pop()
         {
             if (this.top == null)
@@ -50,6 +55,13 @@ namespace LinkedList
             Console.WriteLine("deleted element is{0}", deleteNode);
 
         }
+
+        /// <summary>
+        /// Determines whether this stack is empty.
+        /// </summary>
+        /// <returns>
+        ///   <c>true</c> if this stack is empty; otherwise, <c>false</c>.
+        /// </returns>
         public bool IsEmpty()
         {
             while (this.top != null)
